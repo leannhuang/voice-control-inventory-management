@@ -10,11 +10,6 @@
             "minDockerVersion": "v1.25",
             "loggingOptions": "",
             "registryCredentials": {
-              "dkear": {
-                "username": "$CONTAINER_REGISTRY_USERNAME",
-                "password": "$CONTAINER_REGISTRY_PASSWORD",
-                "address": "$CONTAINER_REGISTRY_LOGINSERVER"
-              }
             }
           }
         },
@@ -57,21 +52,6 @@
           }
         },
         "modules": {
-          "PlugModule": {
-            "version": "1.0",
-            "type": "docker",
-            "status": "running",
-            "restartPolicy": "always",
-            "settings": {
-              "image": "dk361d.azurecr.io/plugmodule:0.0.0-arm64v8",
-              "createOptions": {}
-            },
-            "env": {
-              "PLUG_IP": {
-                "value": "$PLUG_IP"
-              }
-            }
-          },
           "azureeyemodule": {
             "version": "1.0",
             "type": "docker",
@@ -122,7 +102,6 @@
       "properties.desired": {
         "schemaVersion": "1.0",
         "routes": {
-          "AzureSpeechToPlugModule": "FROM /messages/modules/azureearspeechclientmodule/outputs/* INTO BrokeredEndpoint(\"/modules/PlugModule/inputs/EarInput\")"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 7200
