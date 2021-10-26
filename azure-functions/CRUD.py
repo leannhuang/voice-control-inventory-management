@@ -6,10 +6,10 @@ import pyodbc
 
 # Return the sql connection
 def get_connection():
-    server = 'dkear.database.windows.net'
-    database = 'Stock'
-    username = 'sql_admin'
-    password = 'P@ssw0rd'
+    server = 'Your server name'
+    database = 'Your database name'
+    username = 'Your user name'
+    password = 'Your password'
     driver= '{ODBC Driver 17 for SQL Server}'
     connection = pyodbc.connect('DRIVER={};SERVER={};PORT=1433;DATABASE={};UID={};PWD={}'.format(driver, server, database,username, password))
     return connection
