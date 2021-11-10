@@ -27,10 +27,14 @@ The goal of this project is to be able to do the inventory management by voice w
 
 ## Steps
 
-1. Refence to create an [Azure SQL Server Database](https://ms.portal.azure.com/#create/Microsoft.AzureSQL)
+1. Refence the quickstart [link](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal) to create an [Azure SQL Server Database](https://ms.portal.azure.com/#create/Microsoft.AzureSQL)
+
 2. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to config Azure function
+
 3. Visit the [custom commands folder](https://github.com/leannhuang/smart-plug-with-custom-commands/tree/main/custom-commands) to complete setting up the custom commands of the smart stock (Note down the `Application ID`, `Speech resource key`, and `region`)
+
 4. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
+
 5. Deploy edge modules on your edge device
 
 
