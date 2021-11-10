@@ -1,4 +1,16 @@
 # voice-control-inventory-management
+Voice control the Power BI Dashbaord to do the inventory management using the Percept DK audio, Custom Commands, Azure Function, and Power BI.
+
+The goal of this project is to be able to do the inventory management by voice with the Percept DK device and Audio SoM using Azure Custom Commands as the platform.  
+
+# Prerequisites
+- Percept DK ([Purchase](https://www.microsoft.com/en-us/store/build/azure-percept/8v2qxmzbz9vc))
+- Azure Subscription : [Free trial account](https://azure.microsoft.com/en-us/free/)
+- Azure Percept Audio 
+- Speaker or headphones that can connect to 3.5mm audio jack (optional) 
+- Download and install [Power BI Desktop](https://powerbi.microsoft.com/en-us/downloads/)
+- Download and install [VS code](https://code.visualstudio.com/download) 
+- Install the IoT Hub and IoT Tools Extension in VS Code 
 
 ### Get your IoT Hub connection string
 1. Go to IoT Hub service in Azure Portal. Click Shared access policies -> Iothubowner  
