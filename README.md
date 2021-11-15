@@ -13,6 +13,7 @@ The goal of this project is to be able to do the inventory management by voice w
 - Install the IoT Hub and IoT Tools Extension in VS Code 
 
 ## Solution Architecture
+![Solution Architecture](docs/images/solution-architect-1.png)
 
 ## Device Setup
 1. Follow [Quickstart: unbox and assemble your Azure Percept DK components](https://docs.microsoft.com/en-us/azure/azure-percept/quickstart-percept-dk-unboxing) and the next steps.
@@ -29,15 +30,27 @@ The goal of this project is to be able to do the inventory management by voice w
 
 1. Refence the quickstart [link](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal) to create an [Azure SQL Server Database](https://ms.portal.azure.com/#create/Microsoft.AzureSQL)
 
-2. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to config Azure function
+2. Create table and columns by executing the T-SQL query in the query editor window 
+```
+CREATE TABLE Stock ( 
+    color varchar(255), 
+    num_box int, 
+); 
+``` 
 
-3. Visit the [custom commands folder](https://github.com/leannhuang/smart-plug-with-custom-commands/tree/main/custom-commands) to complete setting up the custom commands of the smart stock (Note down the `Application ID`, `Speech resource key`, and `region`)
+3. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to config Azure function
 
-4. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
+4. Visit the [custom commands folder](https://github.com/leannhuang/smart-plug-with-custom-commands/tree/main/custom-commands) to complete setting up the custom commands of the smart stock (Note down the `Application ID`, `Speech resource key`, and `region`)
 
-5. Deploy edge modules on your edge device
+5. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
+
+6. Deploy edge modules on your edge device
+   1. In the Visual Studio Code explorer, right-click the deployment.template.json file and select Build and Push IoT Edge Solution.
+        ![generate manifest]](docs/images/generate-manifest.png)
+   2. Use VSCode as in [here](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux?view=iotedge-2020-11#deploy-modules-to-device) to deploy the modules to the Percept DK with the above files.
 
 
+## Other Info
 ### Get your IoT Hub connection string
 1. Go to IoT Hub service in Azure Portal. Click Shared access policies -> Iothubowner  
 2. Click Copy the get the primary connection string 

@@ -9,7 +9,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     req_body = req.get_json()
     color = req_body['color']
-    num_box = req_body['num_box']
+    num_box = req_body['num-box']
     action = req_body['action']
 
     if color and num_box and action:
