@@ -37,7 +37,7 @@ The goal of this project is to be able to do the inventory management by voice w
    
    2. Login to your SQL server
       
-      ![login](docs/images/login.png)
+      ![login](docs/images/sql-login.png)
    
 
    3. Copy the T-SQL query below and paste in the query editor
@@ -59,7 +59,7 @@ The goal of this project is to be able to do the inventory management by voice w
 5. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
 
 6. Deploy edge modules on your edge device
-   1. In the Visual Studio Code explorer, right-click the `deployment.template.json` file and select `Generate IoT Edge Deployment Manifest`.
+   1. In the Visual Studio Code explorer, right-click the `deployment.template.json` file and select Generate IoT Edge Deployment Manifest.
         
         ![generate manifest](docs/images/generate-manifest.png)
 
