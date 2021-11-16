@@ -31,7 +31,7 @@ Use this folder to deploy azure function as web service
    1. Replace the content of __init__.py by using the __init__.py in this folder
    2. Drag and drop the CURD.py to the same layer of __init__.py
 
-      ![azure-function-hierarchy](../docs/images/azure-function-hierarchy.png)
+      ![azure-function-hierarchy](../docs/images/hierarchy.png)
 
    3. Update the sql server, database, username, password in CRUD.py
 
