@@ -9,6 +9,9 @@ Use this folder to deploy azure function as web service
 5. The [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for Visual Studio Code. 
 6. The [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code. 
 7. Click "..." and check the “Functions” has been checked 
+   
+   ![azure-function](../docs/images/azure-function.png)
+   
 
 ## Content
 | File             | Description                                                   |
@@ -25,13 +28,19 @@ Use this folder to deploy azure function as web service
 4. [Publish the project to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#publish-the-project-to-azure)
 5. [Run the function in Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#run-the-function-in-azure)
 6. Develop CRUD.py to update Azure SQL on Azure Function
-   1. Update your __init__.py 
+   1. Replace the content of __init__.py by using the __init__.py in this folder
    2. Drag and drop the CURD.py to the same layer of __init__.py
    3. Update the sql server, database, username, password in CRUD.py
+
+      ![CRUD-info](../docs/images/CRUD-info.png)
+
    4. Update your requirements.txt
 7. Publishing to an existing function app overwrites the content of that app in Azure. 
      1.   Select the Azure icon in the Activity bar. In the Azure: Functions area, select the Deploy to function app... button.
-     2.   Not down the URL for further use
+     2.   Note down the URL for further use
+
+          ![azure-function-url](../docs/images/azure-function-url.png)
+
      3.   Test post function of the published web service
             ```
             { "color": "yellow", "num_box" :"2", "action":"remove" } 
