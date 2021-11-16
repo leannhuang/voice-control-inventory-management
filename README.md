@@ -46,7 +46,7 @@ CREATE TABLE Stock (
 
 6. Deploy edge modules on your edge device
    1. In the Visual Studio Code explorer, right-click the deployment.template.json file and select Build and Push IoT Edge Solution.
-        ![generate manifest]](docs/images/generate-manifest.png)
+        ![generate manifest](docs/images/generate-manifest.png)
    2. Use VSCode as in [here](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux?view=iotedge-2020-11#deploy-modules-to-device) to deploy the modules to the Percept DK with the above files.
 
 
