@@ -32,9 +32,11 @@ The goal of this project is to be able to do the inventory management by voice w
 
 2. Create table and columns by executing the T-SQL query in the query editor window 
    1. Click Query Editor
+      
       ![query editor](docs/images/query-editor.png)
    
    2. Login to your SQL server
+      
       ![login](docs/images/login.png)
    
 
@@ -49,7 +51,7 @@ The goal of this project is to be able to do the inventory management by voice w
    4. Run the Query to create the stock table 
 
       ![sql-query](docs/images/sql-query.png)
-      
+
 3. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to config Azure function
 
 4. Visit the [custom commands folder](https://github.com/leannhuang/smart-plug-with-custom-commands/tree/main/custom-commands) to complete setting up the custom commands of the smart stock (Note down the `Application ID`, `Speech resource key`, and `region`)
