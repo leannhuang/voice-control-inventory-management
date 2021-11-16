@@ -30,6 +30,9 @@ Use this folder to deploy azure function as web service
 6. Develop CRUD.py to update Azure SQL on Azure Function
    1. Replace the content of __init__.py by using the __init__.py in this folder
    2. Drag and drop the CURD.py to the same layer of __init__.py
+
+      ![azure-function-hierarchy](../docs/images/azure-function-hierarchy.png)
+
    3. Update the sql server, database, username, password in CRUD.py
 
       ![CRUD-info](../docs/images/CRUD-info.png)
