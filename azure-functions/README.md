@@ -59,9 +59,9 @@ Use this folder to create a local Azure Functions project in Python and publish 
 
    3. In Enter request body you see the request message body value of
             
-            ```
-            { "color": "yellow", "num_box" :"2", "action":"remove" } 
-            ```
+      ```
+      { "color": "yellow", "num_box" :"2", "action":"remove" } 
+      ```
       
       Press Enter to send this request message to your function.
       
