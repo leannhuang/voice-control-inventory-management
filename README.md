@@ -7,10 +7,16 @@ The goal of this project is to be able to do the inventory management by voice w
 - Percept DK ([Purchase](https://www.microsoft.com/en-us/store/build/azure-percept/8v2qxmzbz9vc))
 - Azure Subscription : [Free trial account](https://azure.microsoft.com/en-us/free/)
 - Azure Percept Audio 
+- [Azure Percept DK setup experience](https://docs.microsoft.com/en-us/azure/azure-percept/quickstart-percept-dk-set-up)
+- [Azure Percept Audio setup](https://docs.microsoft.com/en-us/azure/azure-percept/quickstart-percept-audio-setup)
 - Speaker or headphones that can connect to 3.5mm audio jack (optional) 
 - Download and install [Power BI Desktop](https://powerbi.microsoft.com/en-us/downloads/)
 - Download and install [VS code](https://code.visualstudio.com/download) 
-- Install the IoT Hub and IoT Tools Extension in VS Code 
+- Install the [IoT Hub](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit) and [IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools) Extension in VS Code 
+- The [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash%2Ckeda#install-the-azure-functions-core-tools) version 3.x.
+- The [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for Visual Studio Code.
+- The [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code.
+
 
 ## Solution Architecture
 ![Solution Architecture](docs/images/solution-architect-1.png)
@@ -30,7 +36,9 @@ The goal of this project is to be able to do the inventory management by voice w
 
 1. Refence the quickstart [link](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal) to create an [Azure SQL Server Database](https://ms.portal.azure.com/#create/Microsoft.AzureSQL)
 
-2. Create table and columns by executing the T-SQL query in the query editor window 
+2. Set the Server Firewall [link](https://docs.microsoft.com/en-us/azure/azure-sql/database/firewall-configure#from-the-database-overview-page)
+   
+3. Create table and columns by executing the T-SQL query in the query editor window 
    1. Click Query Editor
       
       ![query editor](docs/images/query-editor.png)
@@ -52,13 +60,13 @@ The goal of this project is to be able to do the inventory management by voice w
 
       ![sql-query](docs/images/sql-query.png)
 
-3. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to config Azure function
+4. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to config Azure function
 
-4. Visit the [custom commands folder](https://github.com/leannhuang/smart-plug-with-custom-commands/tree/main/custom-commands) to complete setting up the custom commands of the smart stock (Note down the `Application ID`, `Speech resource key`, and `region`)
+5. Visit the [custom commands folder](https://github.com/leannhuang/smart-plug-with-custom-commands/tree/main/custom-commands) to complete setting up the custom commands of the smart stock (Note down the `Application ID`, `Speech resource key`, and `region`)
 
-5. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
+6. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
 
-6. Deploy edge modules on your edge device
+7. Deploy edge modules on your edge device (The edge modules run on devkit will be replaced by the edge modules defined in the `deployment.template.json`)
    1. In the Visual Studio Code explorer, right-click the `deployment.template.json` file and select Generate IoT Edge Deployment Manifest.
         
         ![generate manifest](docs/images/generate-manifest.png)

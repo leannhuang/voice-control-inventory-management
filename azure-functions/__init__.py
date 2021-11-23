@@ -22,7 +22,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         connection = CRUD.get_connection()
         connection = CRUD.insert_data(table_name, data, connection)
         CRUD.close_connection(connection)
-        return func.HttpResponse(f"Hello, {action} {num_box} {num_box}. This HTTP triggered function executed successfully.")
+        return func.HttpResponse(f"Hello, {action} {num_box} {color} boxes. This HTTP triggered function executed successfully.")
     else:
         return func.HttpResponse(
              "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",

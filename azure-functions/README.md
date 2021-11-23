@@ -1,17 +1,5 @@
 # Deploy your Azure function as web service
-Use this folder to deploy azure function as web service
-
-## Prerequsite
-1. An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/en-us/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio). 
-2. The [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cmacos%2Ccsharp%2Cportal%2Cbash%2Ckeda#install-the-azure-functions-core-tools) version 3.x. 
-3. [Python versions that are supported by Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/supported-languages#languages-by-runtime-version). 
-4. [Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/supported-languages#languages-by-runtime-version) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms). 
-5. The [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for Visual Studio Code. 
-6. The [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code. 
-7. Click "..." and check the “Functions” has been checked 
-   
-   ![azure-function](../docs/images/azure-function.png)
-   
+Use this folder to create a local Azure Functions project in Python and publish your function code to Azure
 
 ## Content
 | File             | Description                                                   |
@@ -22,14 +10,26 @@ Use this folder to deploy azure function as web service
 | `requirements.txt`    | List of all dependent Python libraries |
 
 ## Steps
-1. [Create your local project](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#create-an-azure-functions-project)
-2. [Run the function locally](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#run-the-function-locally)
-3. [Sign in to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#sign-in-to-azure)
-4. [Publish the project to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#publish-the-project-to-azure)
-5. [Run the function in Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#run-the-function-in-azure)
-6. Develop CRUD.py to update Azure SQL on Azure Function
-   1. Replace the content of __init__.py by using the __init__.py in this folder
-   2. Drag and drop the CURD.py to the same layer of __init__.py
+1. Click "..." and check the “Functions” has been checked 
+   
+   ![azure-function](../docs/images/azure-function.png)
+
+2.  Create a folder (ex: airlift_az_func) for your project workspace
+   ![create a folder](../docs/images/create-a-folder.png)
+
+3. [Create your local project](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#create-an-azure-functions-project)
+   
+   1. Select a Python alias to create a virtual environment: Choose the location of your Python interpreter. If the location isn't shown, type in the full path to your Python binary. Select skip virtual environment you don’t have python installed
+   [!skip virtual environment](../docs/images/skip-vir-env.png)
+
+4. Develop CRUD.py to update Azure SQL on Azure Function
+   1. Replace the content of the __init__.py in [here](https://github.com/leannhuang/voice-control-inventory-management/blob/main/azure-functions/__init__.py) by copying the raw content of the __init__.py 
+      
+      ![copy the raw content](../docs/images/copy-raw-content.png)
+
+   2. Drag and drop the CURD.py to the same layer of the __init__.py
+
+      ![drag and drop](../docs/images/drag-and-drop.png)
 
       ![azure-function-hierarchy](../docs/images/hierarchy.png)
 
@@ -37,18 +37,34 @@ Use this folder to deploy azure function as web service
 
       ![CRUD-info](../docs/images/CRUD-info.png)
 
-   4. Update your requirements.txt
-7. Publishing to an existing function app overwrites the content of that app in Azure. 
-     1.   Select the Azure icon in the Activity bar. In the Azure: Functions area, select the Deploy to function app... button.
-     2.   Note down the URL for further use
+   4. Replace the content of the requirements.txt in (here)[https://github.com/leannhuang/voice-control-inventory-management/blob/main/azure-functions/requirements.txt] by copying the raw content of requirements.txt
 
-          ![azure-function-url](../docs/images/azure-function-url.png)
+5. [Sign in to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#sign-in-to-azure)
+6. [Publish the project to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#publish-the-project-to-azure)
+   1. Select a runtime: Choose the version of 3.9 
+   2. Note down the URL for further use
+      
+      ![azure-function-url](../docs/images/azure-function-url.png)
 
-     3.   Test post function of the published web service
+7. Test your Azure Function App
+   1. Select the Azure icon in the Activity bar. In the Azure: Functions area, select the Deploy to function app... button.
+   
+   2. Right-click the HttpExample function and choose Execute Function Now....
+   
+      ![execute-function](../docs/images/execute-func.png)
+
+   3. In Enter request body you see the request message body value of
             ```
             { "color": "yellow", "num_box" :"2", "action":"remove" } 
-            ``` 
-     4.   Check if the records in your database has been updated 
+            ```
+      Press Enter to send this request message to your function.
+      ![enter-req-body](../docs/images/enter-req-body.png)
+   
+      When the function executes in Azure and returns a response, a notification is raised in Visual Studio Code.
+
+      ![noticiation](../docs/images/notification.png)
+
+   4. Check if the records in your database has been updated 
 
 
 ## Credits and references
