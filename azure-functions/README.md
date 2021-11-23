@@ -17,7 +17,7 @@ Use this folder to create a local Azure Functions project in Python and publish 
 2.  Create a folder (ex: airlift_az_func) for your project workspace
    ![create a folder](../docs/images/create-a-folder.png)
 
-3. [Create your local project](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#create-an-azure-functions-project)
+3. Create your local project [here](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#create-an-azure-functions-project)
    
    Note: 
    1. Select a Python alias to create a virtual environment: Choose the location of your Python interpreter. If the location isn't shown, type in the full path to your Python binary. Select skip virtual environment you don’t have python installed
@@ -39,10 +39,11 @@ Use this folder to create a local Azure Functions project in Python and publish 
 
       ![CRUD-info](../docs/images/CRUD-info.png)
 
-   4. Replace the content of the requirements.txt in (here)[https://github.com/leannhuang/voice-control-inventory-management/blob/main/azure-functions/requirements.txt] by copying the raw content of requirements.txt
+   4. Replace the content of the requirements.txt in [here](https://github.com/leannhuang/voice-control-inventory-management/blob/main/azure-functions/requirements.txt) by copying the raw content of requirements.txt
 
-5. [Sign in to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#sign-in-to-azure)
-6. [Publish the project to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#publish-the-project-to-azure)
+5. Sign in to Azure [here](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#sign-in-to-azure)
+6. Publish the project to Azure [here](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#publish-the-project-to-azure)
+   
    Note:
       1. Select a runtime: Choose the version of 3.9 
       2. Note down the URL for further use
