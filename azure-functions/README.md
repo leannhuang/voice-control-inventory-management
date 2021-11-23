@@ -20,7 +20,8 @@ Use this folder to create a local Azure Functions project in Python and publish 
 3. [Create your local project](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#create-an-azure-functions-project)
    
    1. Select a Python alias to create a virtual environment: Choose the location of your Python interpreter. If the location isn't shown, type in the full path to your Python binary. Select skip virtual environment you don’t have python installed
-   [!skip virtual environment](../docs/images/skip-vir-env.png)
+      
+      ![skip virtual environment](../docs/images/skip-vir-env.png)
 
 4. Develop CRUD.py to update Azure SQL on Azure Function
    1. Replace the content of the __init__.py in [here](https://github.com/leannhuang/voice-control-inventory-management/blob/main/azure-functions/__init__.py) by copying the raw content of the __init__.py 
