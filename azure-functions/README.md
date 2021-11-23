@@ -51,17 +51,20 @@ Use this folder to create a local Azure Functions project in Python and publish 
       ![azure-function-url](../docs/images/azure-function-url.png)
 
 7. Test your Azure Function App
-   1. Select the Azure icon in the Activity bar. In the Azure: Functions area, select the Deploy to function app... button.
+   1. Select the Azure icon in the Activity bar. In the Azure: Functions area, select the Deploy to function app... button.
    
    2. Right-click the HttpExample function and choose Execute Function Now....
    
       ![execute-function](../docs/images/execute-func.png)
 
    3. In Enter request body you see the request message body value of
+            
             ```
             { "color": "yellow", "num_box" :"2", "action":"remove" } 
             ```
+      
       Press Enter to send this request message to your function.
+      
       ![enter-req-body](../docs/images/enter-req-body.png)
    
       When the function executes in Azure and returns a response, a notification is raised in Visual Studio Code.
