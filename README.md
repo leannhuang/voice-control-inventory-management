@@ -66,7 +66,7 @@ The goal of this project is to be able to do the inventory management by voice w
 
 6. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
 
-7. Deploy edge modules on your edge device (The edge modules run on devkit will be replaced by the edge modules defined in the `deployment.template.json`)
+7. Deploy edge modules on your edge device (Note: The edge modules run on devkit will be replaced by the edge modules defined in the `deployment.template.json`)
    1. In the Visual Studio Code explorer, right-click the `deployment.template.json` file and select Generate IoT Edge Deployment Manifest.
         
         ![generate manifest](docs/images/generate-manifest.png)
