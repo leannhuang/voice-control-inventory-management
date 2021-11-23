@@ -19,6 +19,7 @@ Use this folder to create a local Azure Functions project in Python and publish 
 
 3. [Create your local project](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#create-an-azure-functions-project)
    
+   Note: 
    1. Select a Python alias to create a virtual environment: Choose the location of your Python interpreter. If the location isn't shown, type in the full path to your Python binary. Select skip virtual environment you don’t have python installed
       
       ![skip virtual environment](../docs/images/skip-vir-env.png)
@@ -42,8 +43,9 @@ Use this folder to create a local Azure Functions project in Python and publish 
 
 5. [Sign in to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#sign-in-to-azure)
 6. [Publish the project to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#publish-the-project-to-azure)
-   1. Select a runtime: Choose the version of 3.9 
-   2. Note down the URL for further use
+   Note:
+      1. Select a runtime: Choose the version of 3.9 
+      2. Note down the URL for further use
       
       ![azure-function-url](../docs/images/azure-function-url.png)
 
