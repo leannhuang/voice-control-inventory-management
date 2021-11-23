@@ -73,6 +73,27 @@ The goal of this project is to be able to do the inventory management by voice w
 
    2. Use VSCode as in [here](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux?view=iotedge-2020-11#deploy-modules-to-device) to deploy the modules to the Percept DK with the above files.
 
+8. Import dataset from Azure SQL to Power BI 
+   1. Open the Power BI Desktop and import data from Azure SQL Server
+      1. Click close of the pop-up window
+      2. Import data from SQL Server
+      3. Enter your sql server name <your sql server name>.database.windows.net, and choose DirectQuery
+      4. Select Database, and enter the username and the password
+      5. Select the table Stock, and Click Load to load dataset to Power BI Desktop
+   
+   2. Create your Power BI Report
+      1. Click color, num_box columns in the Fields. And choose visualization Clustered column chart to present your chart.
+      2. Drag and drop the color column to the Legend and you will get the chart that looks like below.
+      3. Click format and click Data colors to change the colors accordingly. You will have the charts that look like below.
+      4. Select card visualization
+      5. Check the num_box
+      6. Drag and drop the color column to Filters on this visual
+      7. Select green in the Filters on this visual
+      8. Double click the column name of the column in the Fields and change the name of the column from “Count of the green box”
+   
+   3. Speak command to your Devkit and refresh Power BI
+      1. Speak “Add three green boxes” to Azure Percept Audio
+      2. Click “Refresh”. You will see the number of green boxes has been updated.
 
 ## Other Info
 ### Get your IoT Hub connection string
