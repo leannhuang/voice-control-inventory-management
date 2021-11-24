@@ -34,11 +34,11 @@ The goal of this project is to be able to do the inventory management by voice w
 
 ## Steps
 
-1. Refence the quickstart [link](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal) to create an [Azure SQL Server Database](https://ms.portal.azure.com/#create/Microsoft.AzureSQL)
+### 1. Refence the quickstart [here](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal) to create an [Azure SQL Server Database](https://ms.portal.azure.com/#create/Microsoft.AzureSQL)
 
-2. Set the Server Firewall [link](https://docs.microsoft.com/en-us/azure/azure-sql/database/firewall-configure#from-the-database-overview-page)
+### 2. Set the Server Firewall [here](https://docs.microsoft.com/en-us/azure/azure-sql/database/firewall-configure#from-the-database-overview-page)
    
-3. Create table and columns by executing the T-SQL query in the query editor window 
+### 3. Create table and columns by executing the T-SQL query in the query editor window 
    1. Click Query Editor
       
       ![query editor](docs/images/query-editor.png)
@@ -60,20 +60,20 @@ The goal of this project is to be able to do the inventory management by voice w
 
       ![sql-query](docs/images/sql-query.png)
 
-4. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to config Azure function
+### 4. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to config Azure function
 
-5. Visit the [custom commands folder](https://github.com/leannhuang/smart-plug-with-custom-commands/tree/main/custom-commands) to complete setting up the custom commands of the smart stock (Note down the `Application ID`, `Speech resource key`, and `region`)
+### 5. Visit the [custom commands folder](https://github.com/leannhuang/smart-plug-with-custom-commands/tree/main/custom-commands) to complete setting up the custom commands of the smart stock (Note down the `Application ID`, `Speech resource key`, and `region`)
 
-6. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
+### 6. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
 
-7. Deploy edge modules on your edge device (Note: The edge modules run on devkit will be replaced by the edge modules defined in the `deployment.template.json`)
+### 7. Deploy edge modules on your edge device (Note: The edge modules run on devkit will be replaced by the edge modules defined in the `deployment.template.json`)
    1. In the Visual Studio Code explorer, right-click the `deployment.template.json` file and select Generate IoT Edge Deployment Manifest.
         
         ![generate manifest](docs/images/generate-manifest.png)
 
    2. Use VSCode as in [here](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux?view=iotedge-2020-11#deploy-modules-to-device) to deploy the modules to the Percept DK with the above files.
 
-8. Import dataset from Azure SQL to Power BI 
+### 8. Import dataset from Azure SQL to Power BI 
    1. Open the Power BI Desktop and import data from Azure SQL Server
       1. Click close of the pop-up window
       2. Import data from SQL Server
