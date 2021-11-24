@@ -10,21 +10,21 @@ Use this folder to create a local Azure Functions project in Python and publish 
 | `requirements.txt`    | List of all dependent Python libraries |
 
 ## Steps
-### 1. Click "..." and check the “Functions” has been checked 
+#### 1. Click "..." and check the “Functions” has been checked 
    
    ![azure-function](../docs/images/azure-function.png)
 
-### 2.  Create a folder (ex: airlift_az_func) for your project workspace
+#### 2.  Create a folder (ex: airlift_az_func) for your project workspace
    ![create a folder](../docs/images/create-a-folder.png)
 
-### 3. Create your local project [here](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#create-an-azure-functions-project)
+#### 3. Create your local project [here](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#create-an-azure-functions-project)
    
    Note: 
    1. Select a Python alias to create a virtual environment: Choose the location of your Python interpreter. If the location isn't shown, type in the full path to your Python binary. Select skip virtual environment you don’t have python installed
       
       ![skip virtual environment](../docs/images/skip-vir-env.png)
 
-### 4. Develop CRUD.py to update Azure SQL on Azure Function
+#### 4. Develop CRUD.py to update Azure SQL on Azure Function
    1. Replace the content of the __init__.py in [here](https://github.com/leannhuang/voice-control-inventory-management/blob/main/azure-functions/__init__.py) by copying the raw content of the __init__.py 
       
       ![copy the raw content](../docs/images/copy-raw-content.png)
@@ -41,8 +41,8 @@ Use this folder to create a local Azure Functions project in Python and publish 
 
    4. Replace the content of the requirements.txt in [here](https://github.com/leannhuang/voice-control-inventory-management/blob/main/azure-functions/requirements.txt) by copying the raw content of requirements.txt
 
-### 5. Sign in to Azure [here](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#sign-in-to-azure)
-### 6. Publish the project to Azure [here](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#publish-the-project-to-azure)
+#### 5. Sign in to Azure [here](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#sign-in-to-azure)
+#### 6. Publish the project to Azure [here](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#publish-the-project-to-azure)
    
    Note:
       1. Select a runtime: Choose the version of 3.9 
@@ -50,7 +50,7 @@ Use this folder to create a local Azure Functions project in Python and publish 
       
       ![azure-function-url](../docs/images/azure-function-url.png)
 
-### 7. Test your Azure Function App
+#### 7. Test your Azure Function App
    1. Select the Azure icon in the Activity bar. In the Azure: Functions area, select the Deploy to function app... button.
    
    2. Right-click the HttpExample function and choose Execute Function Now....

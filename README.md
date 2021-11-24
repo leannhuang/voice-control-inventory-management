@@ -73,7 +73,7 @@ The goal of this project is to be able to do the inventory management by voice w
 
    2. Use VSCode as in [here](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux?view=iotedge-2020-11#deploy-modules-to-device) to deploy the modules to the Percept DK with the above files.
 
-### 8. Import dataset from Azure SQL to Power BI 
+#### 8. Import dataset from Azure SQL to Power BI 
    1. Open the Power BI Desktop and import data from Azure SQL Server
       1. Click close of the pop-up window
       2. Import data from SQL Server
