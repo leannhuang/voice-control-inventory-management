@@ -22,7 +22,7 @@ Remove two red boxes
 
 1. Follow the guidance [here](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/cognitive-services/Speech-Service/quickstart-custom-commands-application.md#go-to-the-speech-studio-for-custom-commands) to import the `smart-stock.json` file
 
-2. Note down the `region` of the resource you created above for further use 
+2. Note down the `region` of the resource you created above and mapping the [name](https://azuretracks.com/2021/04/current-azure-region-names-reference/) for further use 
    
      ![region](../docs/images/region-1.png)
 
@@ -39,11 +39,17 @@ Remove two red boxes
    3. Check the respone in the Test window
         ![test-response](../docs/images/test-response.png)
 
-4. Update prediction LUIS resource [here](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/cognitive-services/Speech-Service/quickstart-custom-commands-application.md#update-prediction-luis-resource)
+4. Replace the web endpoints URL
+   1. Click Web endpoints and replace the URL
+   2. Replace the value in the URL to the HTTP Trigger Url you noted down when you published the Azure function app
+     
+     ![replace-url](../docs/images/replace-url.png)
 
-5. Publish the application [here](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/cognitive-services/Speech-Service/quickstart-custom-commands-application.md#publish-the-application)
+5. Update prediction LUIS resource [here](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/cognitive-services/Speech-Service/quickstart-custom-commands-application.md#update-prediction-luis-resource)
 
-6. Select `Settings` --> `General` to note down the `Application ID` and `Speech resource key` for further useapp
+6. Publish the application [here](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/cognitive-services/Speech-Service/quickstart-custom-commands-application.md#publish-the-application)
+
+7. Select `Settings` --> `General` to note down the `Application ID` and `Speech resource key` for further useapp
    
     ![app-id](../docs/images/app-id.png)
 
