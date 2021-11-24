@@ -43,10 +43,7 @@ The goal of this project is to be able to do the inventory management by voice w
       
       ![query editor](docs/images/query-editor-1.png)
    
-   2. Login to your SQL server
-      
-      ![login](docs/images/sql-login.png)
-   
+   2. Login to your SQL server through SQL server authentication
 
    3. Copy the T-SQL query below and paste in the query editor
       ```
@@ -58,7 +55,7 @@ The goal of this project is to be able to do the inventory management by voice w
 
    4. Run the Query to create the stock table 
 
-      ![sql-query](docs/images/sql-query.png)
+      ![sql-query](docs/images/sql-query-1.png)
 
 #### 4. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to create a local Azure function project in Python and publish your function code to Azure 
 
@@ -71,7 +68,7 @@ The goal of this project is to be able to do the inventory management by voice w
 #### 7. Deploy edge modules on your edge device (Note: The edge modules run on devkit will be replaced by the edge modules defined in the `deployment.template.json`)
    1. In the Visual Studio Code explorer, right-click the `deployment.template.json` file and select Generate IoT Edge Deployment Manifest.
         
-        ![generate manifest](docs/images/generate-manifest.png)
+        ![generate manifest](docs/images/generate-manifest-1.png)
 
    2. Use VSCode as in [here](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux?view=iotedge-2020-11#deploy-modules-to-device) to deploy the modules to the Percept DK with the above files.
 
