@@ -41,7 +41,7 @@ The goal of this project is to be able to do the inventory management by voice w
 #### 3. Create table and columns by executing the T-SQL query in the query editor window 
    1. Click Query Editor
       
-      ![query editor](docs/images/query-editor.png)
+      ![query editor](docs/images/query-editor-1.png)
    
    2. Login to your SQL server
       
