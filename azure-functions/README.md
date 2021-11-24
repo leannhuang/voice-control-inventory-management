@@ -12,7 +12,7 @@ Use this folder to create a local Azure Functions project in Python and publish 
 ## Steps
 #### 1. Click "..." and check the “Functions” has been checked 
    
-   ![azure-function](../docs/images/azure-function.png)
+![azure-function](../docs/images/azure-function.png)
 
 #### 2.  Create a folder (ex: airlift_az_func) for your project workspace
    ![create a folder](../docs/images/create-a-folder.png)
