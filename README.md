@@ -60,11 +60,13 @@ The goal of this project is to be able to do the inventory management by voice w
 
       ![sql-query](docs/images/sql-query.png)
 
-#### 4. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to config Azure function
+#### 4. Visit the [azure-functions folder](https://github.com/leannhuang/voice-control-inventory-management/tree/main/azure-functions) to create a local Azure function project in Python and publish your function code to Azure 
 
 #### 5. Visit the [custom commands folder](https://github.com/leannhuang/smart-plug-with-custom-commands/tree/main/custom-commands) to complete setting up the custom commands of the smart stock (Note down the `Application ID`, `Speech resource key`, and `region`)
 
-#### 6. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
+#### 6. Create a file named `.env` in this folder based on `envtemplate` in the VS code. Provide values for all variables.
+      
+   ![env](docs/images/env.png)
 
 #### 7. Deploy edge modules on your edge device (Note: The edge modules run on devkit will be replaced by the edge modules defined in the `deployment.template.json`)
    1. In the Visual Studio Code explorer, right-click the `deployment.template.json` file and select Generate IoT Edge Deployment Manifest.
