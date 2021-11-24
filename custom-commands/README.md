@@ -7,9 +7,6 @@ Use this folder to deploy smart plug custom commands on your speech studio
 | `smart-stock.json`       | The configuration of the smart stock custom commands           |
 | `readme.md`     | This readme file   |
 
-## Domain
-This Custom Commands application hosts some basic commands to fulfil the turning On/Off the light
-
 ## Example sentences
 Here are a few examples. Try these or others of your choice:
 
@@ -24,7 +21,7 @@ Remove two red boxes
 
 #### 2. Note down the `region` of the resource you created above and mapping the [name](https://azuretracks.com/2021/04/current-azure-region-names-reference/) for further use 
 
-     ![region](../docs/images/region-1.png)
+![region](../docs/images/region-1.png)
 
 #### 3. Try out some voice command 
    1. Select Train at the top of the right pane
@@ -42,8 +39,9 @@ Remove two red boxes
         ![test-response](../docs/images/test-response.png)
 
 #### 4. Replace the web endpoints URL
-   1. Click Web endpoints and replace the URL
-   2. Replace the value in the URL to the HTTP Trigger Url you noted down when you published the Azure function app
+     1. Click Web endpoints and replace the URL
+     
+     2. Replace the value in the URL to the HTTP Trigger Url you noted down when you published the Azure function app
      
      ![replace-url](../docs/images/replace-url.png)
 
@@ -52,8 +50,8 @@ Remove two red boxes
 #### 6. Publish the application [here](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/cognitive-services/Speech-Service/quickstart-custom-commands-application.md#publish-the-application)
 
 #### 7. Select `Settings` --> `General` to note down the `Application ID` and `Speech resource key` for further useapp
-   
-    ![app-id](../docs/images/app-id.png)
+
+![app-id](../docs/images/app-id.png)
 
 ## Credits and references
 - [Create a voice assistant using Custom Commands](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/cognitive-services/Speech-Service/quickstart-custom-commands-application.md#publish-the-application) 
