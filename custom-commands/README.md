@@ -39,9 +39,8 @@ Remove two red boxes
         ![test-response](../docs/images/test-response.png)
 
 #### 4. Replace the web endpoints URL
-     1. Click Web endpoints and replace the URL
-     
-     2. Replace the value in the URL to the HTTP Trigger Url you noted down when you published the Azure function app
+  1. Click Web endpoints and replace the URL
+  2. Replace the value in the URL to the HTTP Trigger Url you noted down when you published the Azure function app
      
      ![replace-url](../docs/images/replace-url.png)
 
