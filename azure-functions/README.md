@@ -47,7 +47,6 @@ Use this folder to create a local Azure Functions project in Python and publish 
    Note:
       1. Select a runtime: Choose the version of 3.9 
       2. Note down the URL for further use
-      
       ![azure-function-url](../docs/images/azure-function-url.png)
 
 #### 7. Test your Azure Function App
